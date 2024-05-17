@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Fiber Starter</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <!--FIRST SECTION-->
+      <section class="first-section">
+        <!--NAVIGATION BAR -->
+        <nav class="navigation-tab">
+          <ul class="sidebar">
+            <a onclick="hideSidebar()" href="#">
+              <img src="./Assets/Close-menu.svg" alt="close" />
+            </a>
+            <a href="#">Community</a>
+            <a href="#">Pricing</a>
+            <a href="#">Features</a>
+            <a href="sign-in.html" target="">Sign In</a>
+            <a href="sign-up.html" target="">Sign Up</a>
+          </ul>
+
+          <ul class="main-nav">
+            <div class="logo">
+              <p>Fiber</p>
+            </div>
+
+            <div class="navigation">
+              <a href="#">Community</a>
+              <a href="#">Pricing</a>
+              <a href="#">Features</a>
+            </div>
+
+            <div class="logins">
+              <a href="sign-in.html" target="" class="sign-in">Sign In</a>
+              <a href="sign-up.html" target="" class="sign-up">Sign Up</a>
+            </div>
+
+            <div onclick="showSidebar()" class="open-menu">
+              <a href="#"
+                ><img src="./Assets/Hamburger Menu.svg" alt="menu"
+              /></a>
+            </div>
+          </ul>
+        </nav>
+
+        <section id="top-section">
+          <div class="illustration">
+            <img src="./Assets/hero-Illustration.png" alt="" />
+          </div>
+
+          <article class="first-article">
+            <div class="rating">
+              <img src="./Assets/star.svg" alt="star" />
+              <img src="./Assets/star.svg" alt="star" />
+              <img src="./Assets/star.svg" alt="star" />
+              <img src="./Assets/star.svg" alt="star" />
+              <img src="./Assets/star.svg" alt="star" />
+
+              <p class="rating-text">Rated 4.8/5 (243 reviews)</p>
+            </div>
+
+            <h1>Create your portfolio in minutes.</h1>
+
+            <p class="article-text">
+              With Fiber, you can setup your own personal portfolio in minutes
+              with dozens of premade, beautiful templates.
+            </p>
+
+            <div class="trial">
+              <a href="" target="_blank" id="free-trial">Start Free Trial</a>
+              <a href="" target="_blank" id="examples">View Examples</a>
+            </div>
+
+            <div class="benefits">
+              <div class="first-benefit">
+                <img src="./Assets/Checkmark.svg" alt="checkmark" />
+                <p>No Credit Card Required</p>
+              </div>
+              <div class="second-benefit">
+                <img src="./Assets/Checkmark.svg" alt="checkmark" />
+                <p>10 Free Templates</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!--SECOND SECTION-->
+      <section class="second-section">
+        <p>Why Fiber?</p>
+        <h1>A good portfolio means good employability.</h1>
+
+        <div class="features">
+          <div class="first-feature">
+            <img src="./Assets/time.svg" alt="clock" />
+            <h3>Build in minutes</h3>
+            <p>
+              With a selection of premade templates, you can build out a
+              portfolio in less than 10 minutes.
+            </p>
+          </div>
+
+          <div class="second-feature">
+            <img src="./Assets/code.svg" alt="clock" />
+            <h3>Add custom CSS</h3>
+            <p>
+              Customize your personal portfolio even more with the ability to
+              add your own custom CSS styles.
+            </p>
+          </div>
+
+          <div class="third-feature">
+            <img src="./Assets/allSizes.svg" alt="clock" />
+            <h3>Responsive</h3>
+            <p>
+              All Fiber templates are fully responsive to ensure the experience
+              is seemless across all devices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--THIRD SECTION-->
+      <section class="third-section">
+        <article>
+          <div class="third-section-article">
+            <h2>Diversify your portfolio.</h2>
+            <p>
+              Create an even more impressive portfolio by creating case studies
+              for your projects. Simply follow our step-by-step guide.
+            </p>
+            <a href="" target="_blank">Start Free Trial</a>
+          </div>
+
+          <div class="image">
+            <img src="./Assets/Page Image.png" alt="" />
+          </div>
+        </article>
+      </section>
+
+      <!--FOURTH SECTION-->
+      <section class="fourth-section">
+        <div class="testimonials">
+          <div class="testimonial-1">
+            <div class="profile">
+              <img src="./Assets/User Avatar.svg" alt="avatar" />
+              <div class="profile-name">
+                <p class="name">Sarah Andrews</p>
+                <p class="revenue">$100k in revenue</p>
+              </div>
+            </div>
+
+            <p>
+              Setting up my portfolio with Fiber took no more than 10 minutes.
+              Since then, my portfolio has attracted a lot of clients and made
+              me more than $100k.
+            </p>
+            <button>View Sarah's Portfolio</button>
+          </div>
+
+          <div class="testimonial-2">
+            <div class="profile">
+              <img src="./Assets/User Avatar 2.svg" alt="avatar" />
+              <div class="profile-name">
+                <p class="name">Mathew Higgins</p>
+                <p class="revenue">$20k in revenue</p>
+              </div>
+            </div>
+
+            <p>
+              I have been getting A LOT of leads ever since I used Fiber's
+              premade templates, now I just need to work on my case studies and
+              I'll be ready to go!
+            </p>
+            <button>View Mathew's Portfolio</button>
+          </div>
+
+          <div class="testimonial-3">
+            <div class="profile">
+              <img src="./Assets/User Avatar 32.svg" alt="avatar" />
+              <div class="profile-name">
+                <p class="name">Janice Dave</p>
+                <p class="revenue">$30k in revenue</p>
+              </div>
+            </div>
+
+            <p>
+              I Only just started freelancing this year and I have already made
+              more than I ever made in my full-time job. The templates are just
+              so amazing.
+            </p>
+            <button>View Janice's Portfolio</button>
+          </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <footer>
+        <div class="info">
+          <h1>Fiber</h1>
+          <p>
+            With Fiber, you can setup your own personal portfolio in minutes
+            with dozens of premade, beautiful templates.
+          </p>
+          <p>Made with &hearts; in the Netherlands.</p>
+        </div>
+
+        <div class="sitemap">
+          <h1>Sitemap</h1>
+          <p>Homepage</p>
+          <p>Pricing</p>
+          <p>Testimonials</p>
+          <p>Features</p>
+        </div>
+
+        <div class="resources">
+          <h1>Resources</h1>
+          <p>Support</p>
+          <p>Contact</p>
+          <p>FAQ</p>
+        </div>
+
+        <div class="company">
+          <h1>Company</h1>
+          <p>About</p>
+          <p>Customers</p>
+          <p>Blog</p>
+        </div>
+
+        <div class="portfolio">
+          <h1>Portfolio</h1>
+          <p>Sarah Andrews</p>
+          <p>Mathew Higgins</p>
+          <p>Janice Dave</p>
+        </div>
+      </footer>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+      }
+
+      ScrollReveal({
+        reset: false,
+        distance: '32px',
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal('.first-article', { delay: 200, origin: 'left' });
+      ScrollReveal().reveal('.illustration', { delay: 300, origin: 'right' });
+
+      ScrollReveal().reveal('.second-section p:first-child', {
+        delay: 200,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('.second-section h1', {
+        delay: 250,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('.second-section .features .first-feature', {
+        delay: 300,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('.second-feature', {
+        delay: 350,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('.third-feature', { delay: 400, origin: 'bottom' });
+
+      ScrollReveal().reveal(
+        '.third-section article .third-section-article, .third-section article .image',
+        {
+          delay: 300,
+          origin: 'bottom',
+          interval: 200,
+        }
+      );
+
+      ScrollReveal().reveal('.testimonial-3', { delay: 200, origin: 'left' });
+      ScrollReveal().reveal('.testimonial-2', { delay: 400, origin: 'left' });
+      ScrollReveal().reveal('.testimonial-1', { delay: 600, origin: 'left' });
+
+      ScrollReveal().reveal('footer .info', { delay: 200, origin: 'bottom' });
+      ScrollReveal().reveal('footer .sitemap', {
+        delay: 250,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('footer .resources', {
+        delay: 300,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('footer .company', {
+        delay: 350,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('footer .portfolio', {
+        delay: 400,
+        origin: 'bottom',
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sign-in.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!--first section-->
+      <div class="signup-section">
+        <form>
+          <p class="logo">Fiber</p>
+
+          <h1>Sign in to your fiber account</h1>
+
+          <div class="user-box">
+            <input type="email" name="email" required="" />
+            <label>E-mail</label>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="password"
+              name="password"
+              class="password"
+              required=""
+            />
+
+            <img src="./Assets/visibility_off.svg" class="no-visibility" />
+            <label>Password</label>
+          </div>
+
+          <div class="condition">
+            <input type="checkbox" name="checkmark" />
+            <p>Remember me</p>
+          </div>
+
+          <center>
+            <a href="index.html">
+              Login Account
+              <span></span>
+            </a>
+          </center>
+
+          <p class="sign-in">
+            Don't have an account?
+            <span><a href="sign-up.html">Sign up</a></span>
+          </p>
+        </form>
+      </div>
+
+      <!--second section-->
+      <div class="article-container">
+        <article>
+          <div class="image">
+            <img src="./Assets/Sign Up Image.png" alt="" />
+          </div>
+          <h1>Unparalleled Templates</h1>
+          <p>
+            Crafted by a team of professional designers, our templates are
+            unparalleded in the market.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script>
+      const togglePassword = document.querySelector('.no-visibility');
+
+      const password = document.querySelector('.password');
+
+      togglePassword.addEventListener('click', function (e) {
+        // Toggle the type attribute
+        const type =
+          password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+
+        // Toggle the eye slash icon
+        if (togglePassword.src.match('./Assets/visibility_off.svg')) {
+          togglePassword.src = './Assets/visibility.svg';
+        } else {
+          togglePassword.src = './Assets/visibility_off.svg';
+        }
+      });
+    </script>
+  </body>
+</html>
