@@ -222,6 +222,7 @@ nav .main-nav .logins .sign-up {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: space-between;
   gap: 2rem;
+  max-height: min-content;
 }
 
 :is(
@@ -229,7 +230,8 @@ nav .main-nav .logins .sign-up {
     .features .second-feature,
     .features .third-feature
   ) {
-  max-width: 400px;
+  max-width: max-content;
+  max-height: min-content;
 }
 
 .second-section .features .first-feature h3,
@@ -386,15 +388,18 @@ footer {
   padding: 2.82rem clamp(2rem, -15.23rem + 27vw, 9rem) 4.5rem;
   background: rgb(249, 248, 244);
   gap: 2.82rem;
+  max-height: min-content;
 }
 
 footer .info {
   grid-column: 1/3;
-  max-width: 25rem;
+  max-width: max-content;
+  max-height: min-content;
 }
 
 :is(footer .sitemap, footer .resources, footer .company, footer .portfolio) {
-  max-width: 9.4rem;
+  max-width: max-content;
+  max-height: min-contentg;
 }
 
 :is(footer .info) > h1 {
@@ -560,17 +565,6 @@ footer .info {
 }
 
 @media screen and (max-width: 900px) {
-  nav .main-nav .navigation,
-  nav .main-nav .logins {
-    display: none;
-  }
-
-  .sidebar {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 900px) {
   nav {
     padding-inline: 4rem;
   }
@@ -638,7 +632,7 @@ footer .info {
 
   #top-section .first-article .trial #examples {
     font-size: 1.2rem;
-    color: rgb(245, 242, 252);
+    color: rgb(82, 7, 233);
   }
 
   #top-section .first-article .benefits {
